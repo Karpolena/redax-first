@@ -1,8 +1,8 @@
 
 
-const Content = (state = {
+let Content = (state = {
     folders: ["folder"]
-}, action) => {
+}/*, action*/) => {
     return state;
 }
 export default Content;

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Content from "./Content";
 
-const App = (props) => {
+const App = () => {
     return (
         <div>
             <Header />

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import {addToo, removeTodo} from "./../actions/Todo";
 
@@ -28,6 +29,11 @@ const Content = (props) => {
             }
         </div>
     )
+}
+
+Content.propTypes = {
+    todo: PropTypes.object,
+    dispatch: PropTypes.func
 }
 
 function mapStateToProps (state) {

@@ -1,11 +1,11 @@
-export const addToo = (payload) => {
+export let addToo = (payload) => {
     return {
         type: "add-todo",
         payload
     }
-};
+}
 
-export const removeTodo = (payload) => {
+export let removeTodo = (payload) => {
     return {
         type: "remove-todo",
         payload

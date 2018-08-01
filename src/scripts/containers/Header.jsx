@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const Header = (props) => {
+const Header = () => {
 
     return (
         <div>

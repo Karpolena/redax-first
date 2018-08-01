@@ -23,7 +23,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, "public"),
         filename: "js/[name].js",
-        publicPath: "./../"//for images
+        publicPath: "./../"
     },
 
     resolve: {
@@ -34,7 +34,7 @@ module.exports = {
         loaders:[
             {
                 test: /\.jsx?$/,
-                loader: "babel-loader",
+                use: ["babel-loader", "eslint-loader"],
                 exclude: /node_modules/
             },
             {

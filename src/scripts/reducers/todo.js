@@ -20,7 +20,7 @@ const Todo = (state = initState, action) => {
             return addTodo(state, action);
         case "remove-todo": 
             return removeTodo(state, action);
+        default: return state;
     }
-    return state;
 }
 export default Todo;
